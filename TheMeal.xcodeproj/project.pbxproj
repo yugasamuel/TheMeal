@@ -15,6 +15,8 @@
 		6505B81E2A8A276900104F23 /* TheMealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B81D2A8A276900104F23 /* TheMealUITests.swift */; };
 		6505B8202A8A276900104F23 /* TheMealUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B81F2A8A276900104F23 /* TheMealUITestsLaunchTests.swift */; };
 		6505B82D2A8A2C8800104F23 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B82C2A8A2C8800104F23 /* Meal.swift */; };
+		6505B82F2A8A8C5500104F23 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B82E2A8A8C5500104F23 /* MealDetail.swift */; };
+		6505B8312A8A8CB800104F23 /* Content-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B8302A8A8CB800104F23 /* Content-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		6505B81D2A8A276900104F23 /* TheMealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealUITests.swift; sourceTree = "<group>"; };
 		6505B81F2A8A276900104F23 /* TheMealUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6505B82C2A8A2C8800104F23 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		6505B82E2A8A8C5500104F23 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
+		6505B8302A8A8CB800104F23 /* Content-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			children = (
 				6505B8022A8A276800104F23 /* TheMealApp.swift */,
 				6505B8042A8A276800104F23 /* ContentView.swift */,
+				6505B82E2A8A8C5500104F23 /* MealDetail.swift */,
+				6505B8302A8A8CB800104F23 /* Content-ViewModel.swift */,
 				6505B82C2A8A2C8800104F23 /* Meal.swift */,
 				6505B8062A8A276900104F23 /* Assets.xcassets */,
 				6505B8082A8A276900104F23 /* Preview Content */,
@@ -261,7 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6505B8052A8A276800104F23 /* ContentView.swift in Sources */,
+				6505B82F2A8A8C5500104F23 /* MealDetail.swift in Sources */,
 				6505B82D2A8A2C8800104F23 /* Meal.swift in Sources */,
+				6505B8312A8A8CB800104F23 /* Content-ViewModel.swift in Sources */,
 				6505B8032A8A276800104F23 /* TheMealApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
