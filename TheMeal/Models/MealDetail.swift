@@ -1,5 +1,5 @@
 //
-//  Meal.swift
+//  MealDetail.swift
 //  TheMeal
 //
 //  Created by Yuga Samuel on 14/08/23.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Response: Codable {
-    let meals: [Meal]
+struct DetailResponse: Codable {
+    let meals: [MealDetail]
 }
 
-struct Meal: Codable, Hashable {
+struct MealDetail: Codable, Hashable {
     let id: String
     let name: String
     let thumbnail: String
