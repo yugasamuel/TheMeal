@@ -14,7 +14,21 @@ struct ContentView: View {
         NavigationStack {
             List {
                 ForEach(viewModel.meals, id: \.id) { meal in
-                    Text(meal.name)
+                    HStack {
+                        AsyncImage(url: URL(string: meal.thumbnail)) { image in
+                            image
+                                .resizable()
+                                .scaledToFit()
+                        } placeholder: {
+                            ProgressView()
+                        }
+                        .frame(width: 80, height: 80)
+                        .cornerRadius(6)
+                        .shadow(radius: 3)
+                        
+                        Text(meal.name)
+                            .font(.headline)
+                    }
                 }
             }
             .navigationTitle("TheMeal")

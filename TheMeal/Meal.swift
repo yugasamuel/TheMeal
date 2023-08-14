@@ -36,7 +36,9 @@ class MealViewModel: ObservableObject {
             let (data, _) = try await URLSession.shared.data(from: url)
 
             if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                meals = decodedResponse.meals
+                DispatchQueue.main.async {
+                    self.meals = decodedResponse.meals
+                }
             }
         } catch {
             meals = []
