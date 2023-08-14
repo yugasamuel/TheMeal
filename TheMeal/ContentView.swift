@@ -8,19 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: MealViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                ForEach(viewModel.meals, id: \.id) { meal in
+                    Text(meal.name)
+                }
+            }
+            .navigationTitle("TheMeal")
+            .task {
+                await viewModel.loadData()
+            }
         }
-        .padding()
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(MealViewModel())
     }
 }
