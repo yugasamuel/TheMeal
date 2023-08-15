@@ -35,12 +35,16 @@ struct ContentView: View {
             }
             .navigationTitle("TheMeal")
             .navigationDestination(for: Meal.self) { meal in
-//                Text(meal.ingredient1)
+                MealDetailView(id: meal.id)
             }
             .task {
-                await viewModel.loadData()
+                if viewModel.meals.isEmpty {
+                    await viewModel.loadData()
+                    await viewModel.loadDetailData()
+                }
             }
         }
+        .environmentObject(viewModel)
     }
 }
 

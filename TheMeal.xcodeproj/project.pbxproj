@@ -18,7 +18,6 @@
 		6505B82F2A8A8C5500104F23 /* MealDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B82E2A8A8C5500104F23 /* MealDetail.swift */; };
 		6505B8312A8A8CB800104F23 /* Content-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B8302A8A8CB800104F23 /* Content-ViewModel.swift */; };
 		6505B8362A8A8DEE00104F23 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B8352A8A8DEE00104F23 /* MealDetailView.swift */; };
-		6505B8382A8A8E4A00104F23 /* MealDetail-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505B8372A8A8E4A00104F23 /* MealDetail-ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +52,6 @@
 		6505B82E2A8A8C5500104F23 /* MealDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetail.swift; sourceTree = "<group>"; };
 		6505B8302A8A8CB800104F23 /* Content-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content-ViewModel.swift"; sourceTree = "<group>"; };
 		6505B8352A8A8DEE00104F23 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
-		6505B8372A8A8E4A00104F23 /* MealDetail-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealDetail-ViewModel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				6505B8302A8A8CB800104F23 /* Content-ViewModel.swift */,
-				6505B8372A8A8E4A00104F23 /* MealDetail-ViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -301,7 +298,6 @@
 				6505B82F2A8A8C5500104F23 /* MealDetail.swift in Sources */,
 				6505B82D2A8A2C8800104F23 /* Meal.swift in Sources */,
 				6505B8312A8A8CB800104F23 /* Content-ViewModel.swift in Sources */,
-				6505B8382A8A8E4A00104F23 /* MealDetail-ViewModel.swift in Sources */,
 				6505B8032A8A276800104F23 /* TheMealApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
